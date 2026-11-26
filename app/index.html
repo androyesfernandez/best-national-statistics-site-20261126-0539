@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlas of Nations — National Statistics Explorer</title>
+<meta name="description" content="Compare countries on population, GDP per capita, life expectancy, unemployment, literacy, CO2, internet use and fertility — with ten-year trends, rankings and side-by-side comparisons. Figures from the World Bank and United Nations, latest available year.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">▦</span> Atlas of Nations</a>
+    <nav class="mainnav" aria-label="Sections">
+      <a href="#/" data-nav="overview">Overview</a>
+      <a href="#/rankings" data-nav="rankings">Rankings</a>
+      <a href="#/compare" data-nav="compare">Compare</a>
+      <a href="#/about" data-nav="about">Sources &amp; methods</a>
+    </nav>
+    <label class="jump">Jump to a country
+      <select id="country-jump" aria-label="Jump to a country"></select>
+    </label>
+  </div>
+</header>
+<main id="app" class="wrap"></main>
+<footer class="foot">
+  <div class="wrap">
+    <p><strong>Atlas of Nations</strong> — an independent statistics explorer. Figures are as published by the
+    World Bank (World Development Indicators) and the United Nations (World Population Prospects), latest
+    available year, 2023–2024; values are rounded and a few are estimates, marked where they are.
+    This site runs entirely offline from its own files — no network requests.</p>
+    <p class="foot-nav"><a href="#/">Overview</a> · <a href="#/rankings">Rankings</a> ·
+    <a href="#/compare">Compare countries</a> · <a href="#/about">Sources &amp; methods</a></p>
+  </div>
+</footer>
+</body>
+</html>
